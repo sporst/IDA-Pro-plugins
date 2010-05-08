@@ -1,0 +1,154 @@
+<html>
+<head>
+<style type="text/css">
+<!--
+	body, div, table
+	{ font-family: Arial, Helvetica, Sans-Serif; font-size: 12px; line-height: 14px; border:0; color: rgb(29,29,101) }
+	h2
+	{ font-family: Arial, Helvetica, Sans-Serif; font-size: 17px; line-height: 19px; color: rgb(29,29,101) }
+	h3
+	{ font-family: Arial, Helvetica, Sans-Serif; font-size: 14px; line-height: 16px; color: rgb(29,29,101) }	
+	.evenLine
+	{ background-color: #FFCC33; }
+	.oddLine
+	{ background-color: #FFFF33; }
+-->
+</style>
+</head>
+
+<body bgcolor="#EEEEEE">
+
+<center><h1>Profiling Result of %FILENAME%</h1></center>
+
+<center><h2>Coverage Results</h2></center>
+<center>
+<table style="width:800px">
+	<tr bgcolor="#FFFFFF">
+		<td style="text-align:center">Type</td>
+		<td style="text-align:center">Total</td>
+		<td style="text-align:center">Hit</td>
+		<td style="text-align:center">Hit %</td>
+		<td style="text-align:center">Not Hit</td>
+		<td style="text-align:center">Not Hit %</td>
+	</tr>
+	<tr class="evenLine">
+		<td style="text-align:right">Functions</td>
+		<td style="text-align:right">%NUMBER_OF_FUNCTIONS%</td>
+		<td style="text-align:right">%NUMBER_OF_HIT_FUNCTIONS%</td>
+		<td style="text-align:right">%NUMBER_OF_HIT_FUNCTIONS_PERCENTAGE% %</td>
+		<td style="text-align:right">%NUMBER_OF_NOT_HIT_FUNCTIONS%</td>
+		<td style="text-align:right">%NUMBER_OF_NOT_HIT_FUNCTIONS_PERCENTAGE% %</td>
+	</tr>
+	<tr class="oddLine">
+		<td style="text-align:right">Blocks</td>
+		<td style="text-align:right">%NUMBER_OF_BLOCKS%</td>
+		<td style="text-align:right">%NUMBER_OF_HIT_BLOCKS%</td>
+		<td style="text-align:right">%NUMBER_OF_HIT_BLOCKS_PERCENTAGE% %</td>
+		<td style="text-align:right">%NUMBER_OF_NOT_HIT_BLOCKS%</td>
+		<td style="text-align:right">%NUMBER_OF_NOT_HIT_BLOCKS_PERCENTAGE% %</td>
+	</tr>
+</table>
+</center>
+
+<center><h2>Functions sorted by hits</h2></center>
+<center>
+<table style="width:800px">
+<tr bgcolor="#FFFFFF">
+	<td style="text-align:center">Position</td>
+		<td style="text-align:center">Function Name</td>
+		<td style="text-align:center">Function Offset</td>
+		<td style="text-align:center">Total Time</td>
+		<td style="text-align:center">Total Time %</td>
+		<td style="text-align:center">Total Hits</td>
+		<td style="text-align:center">Total Hits %</td>
+		<td style="text-align:center">Average Time</td>
+	</tr>
+%FUNCTIONS_BY_HITS%
+</table>
+</center>
+
+<body bgcolor="#EEEEEE">
+<center><h2>Functions sorted by total time</h2></center>
+<center>
+<table style="width:800px">
+<tr bgcolor="#FFFFFF">
+	<td style="text-align:center">Position</td>
+		<td style="text-align:center">Function Name</td>
+		<td style="text-align:center">Function Offset</td>
+		<td style="text-align:center">Total Time</td>
+		<td style="text-align:center">Total Time %</td>
+		<td style="text-align:center">Total Hits</td>
+		<td style="text-align:center">Total Hits %</td>
+		<td style="text-align:center">Average Time</td>
+	</tr>
+%FUNCTIONS_BY_TIME%
+</table>
+</center>
+
+<center><h2>Functions sorted by average time</h2></center>
+<center>
+<table style="width:800px">
+<tr bgcolor="#FFFFFF">
+	<td style="text-align:center">Position</td>
+		<td style="text-align:center">Function Name</td>
+		<td style="text-align:center">Function Offset</td>
+		<td style="text-align:center">Total Time</td>
+		<td style="text-align:center">Total Time %</td>
+		<td style="text-align:center">Total Hits</td>
+		<td style="text-align:center">Total Hits %</td>
+		<td style="text-align:center">Average Time</td>
+	</tr>
+%FUNCTIONS_BY_AVERAGE_TIME%
+</table>
+</center>
+
+<center><h2>Blocks sorted by hits</h2></center>
+<center>
+<table style="width:800px">
+<tr bgcolor="#FFFFFF">
+	<td style="text-align:center">Position</td>
+		<td style="text-align:center">Block Offset</td>
+		<td style="text-align:center">Parent Function</td>
+		<td style="text-align:center">Total Time</td>
+		<td style="text-align:center">Total Time %</td>
+		<td style="text-align:center">Total Hits</td>
+		<td style="text-align:center">Total Hits %</td>
+	</tr>
+%BLOCKS_BY_HITS%
+</table>
+</center>
+
+<center><h2>Blocks sorted by total time</h2></center>
+<center>
+<table style="width:800px">
+<tr bgcolor="#FFFFFF">
+	<td style="text-align:center">Position</td>
+		<td style="text-align:center">Block Offset</td>
+		<td style="text-align:center">Parent Function</td>
+		<td style="text-align:center">Total Time</td>
+		<td style="text-align:center">Total Time %</td>
+		<td style="text-align:center">Total Hits</td>
+		<td style="text-align:center">Total Hits %</td>
+	</tr>
+%BLOCKS_BY_TIME%
+</table>
+</center>
+
+<center><h2>Complete Event List</h2></center>
+<center>
+<table style="width:800px">
+<tr bgcolor="#FFFFFF">
+	<td style="text-align:center">Event</td>
+		<td style="text-align:center">Time</td>
+		<td style="text-align:center">Address</td>
+		<td style="text-align:center">Parent Function</td>
+	</tr>
+%ALL_EVENTS%
+</table>
+</center>
+
+</body>
+
+<p align="center">Output generated by <a href="http://www.the-interweb.com">Hotch 1.0.0</a></p>
+
+</html>
