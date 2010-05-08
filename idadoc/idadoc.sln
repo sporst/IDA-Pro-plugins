@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "idadoc", "idadoc\idadoc.vcproj", "{F3769462-769D-4DA6-83A5-BDA2EBB7C969}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release 4.9|Win32 = Release 4.9|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3769462-769D-4DA6-83A5-BDA2EBB7C969}.Debug|Win32.ActiveCfg = Release 4.9|Win32
+		{F3769462-769D-4DA6-83A5-BDA2EBB7C969}.Debug|Win32.Build.0 = Release 4.9|Win32
+		{F3769462-769D-4DA6-83A5-BDA2EBB7C969}.Release 4.9|Win32.ActiveCfg = Release 4.9|Win32
+		{F3769462-769D-4DA6-83A5-BDA2EBB7C969}.Release 4.9|Win32.Build.0 = Release 4.9|Win32
+		{F3769462-769D-4DA6-83A5-BDA2EBB7C969}.Release|Win32.ActiveCfg = Release 4.9|Win32
+		{F3769462-769D-4DA6-83A5-BDA2EBB7C969}.Release|Win32.Build.0 = Release 4.9|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
