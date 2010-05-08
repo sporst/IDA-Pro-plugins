@@ -6,3 +6,6 @@ Hotch
 idadoc
 	Turns comments into HTML documentation. A bit like javadoc or Doxygen for IDA
 	Pro.
+
+InstructionCounter
+	Counts the assembler instructions in an IDB file.

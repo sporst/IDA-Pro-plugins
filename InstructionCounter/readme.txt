@@ -1,0 +1,1 @@
+Counts the assembler instructions in an IDB file.
